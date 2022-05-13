@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/lite-youtube-embed/src/lite-yt-embed.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Stenojam</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="nav-logo">
+          <img src="images/logo.svg" alt="" class="logo" />
+          <h1 id="title">stenojam</h1>
+        </div>
+        <div class="nav-buttons">
+          <div class="circle red"></div>
+          <div class="circle yellow"></div>
+          <div class="circle blue"></div>
+        </div>
+        <div class="nav-config">
+          <p id="change-song-config">change song</p>
+          <p>By StenoKeyboards</p>
+        </div>
+      </div>
+      <div class="text-box-wrapper">
+        <textarea id="type-box" placeholder="la la la..."></textarea>
+      </div>
+      <div class="play-box">
+        <div class="video">
+          <lite-youtube videoid="ylLJDD0Vvjw"></lite-youtube>
+        </div>
+      </div>
+    </div>
+    <div id="get-link" hidden>
+      <div class="overlay"></div>
+      <div class="YouTube-link-input-container">
+        <div class="link-box">
+          <img src="images/search_icon.svg" alt="" class="search-icon" />
+          <textarea
+            id="YouTube-link-input"
+            placeholder="insert YouTube link here"
+            rows="1"
+            maxlength="50"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="about" hidden>
+      <div class="overlay"></div>
+      <div class="overlay-container"></div>
+    </div>
+    <script src="node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
